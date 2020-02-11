@@ -85,9 +85,15 @@ footer {
 
 .grid {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr;
   color: white;
   background-color: black; }
+  @media (min-width: 480px) {
+    .grid {
+      grid-template-columns: 1fr 1fr 1fr; } }
+  @media (min-width: 780px) {
+    .grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr; } }
   .grid figure {
     position: relative;
     width: 100%; }
@@ -96,6 +102,12 @@ footer {
     height: 400px;
     background-position: cover;
     z-index: 0; }
+    @media (min-width: 480px) {
+      .grid img {
+        height: 500px; } }
+    @media (min-width: 780px) {
+      .grid img {
+        height: 500px; } }
   .grid p {
     position: absolute;
     width: 96%;
@@ -105,3 +117,6 @@ footer {
     color: white;
     z-index: 1;
     bottom: 0; }
+    @media (min-width: 780px) {
+      .grid p {
+        padding: 10px 2.1%; } }
