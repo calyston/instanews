@@ -12,10 +12,7 @@ $(function () {
     })
 
       .done(function (data) {
-        console.log(data.results[0].multimedia) //2
-
-
-
+        console.log(data.results[0].multimedia)
 
         $.each(data.results, function (index, value) {
           console.log(`${index}: ${value}`)
@@ -23,10 +20,10 @@ $(function () {
           let abstract = value.abstract
           let articleImage = value.multimedia[0].url
 
-
           $(".grid").append(`<a href="${articleUrl}"><figure><img src="${articleImage}"><p>${abstract}</p></figure></a>`)
-        })
+        }
 
+        )
       })
   })
 })

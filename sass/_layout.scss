@@ -7,20 +7,24 @@ background-color: black;
 }
 
 .grid {
-  width: 100%;
+  width: 100vw;
+  grid-template-columns: 1fr;
 
   figure {
     position: relative;
+    width: 100vw;
   }
   img {
+    width: 100%;
     height: 300px;
     background-position: cover;
     z-index: 0;
   }
   p {
     position: absolute;
+    width: 100%;
     padding: 10px;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.5);
     color: white;
     z-index: 1;
     bottom: 0;
