@@ -47,6 +47,7 @@ gulp.task('watch', function () {
     }
   })
   gulp.watch('js/*.js', gulp.series(['scripts']))
+  gulp.watch('sass/*scss', gulp.series(['sass']))
   gulp.watch('./*html').on('change', browserSync.reload)
 })
 

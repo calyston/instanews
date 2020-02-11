@@ -15,11 +15,16 @@ $(function () {
         console.log(data.results[0].multimedia) //2
 
 
+
+
         $.each(data.results, function (index, value) {
-          console.log(`${index}: ${value.abstract}`)
-          $(".grid").append(`${index}: ${value.abstract}`)
-          $(".grid").append(value.multimedia && value.multimedia[4])
-          // $(".grid").append(`<p>Article</p>`)
+          console.log(`${index}: ${value}`)
+          let articleUrl = value.url
+          let abstract = value.abstract
+          let articleImage = value.multimedia[0].url
+
+
+          $(".grid").append(`<a href="${articleUrl}"><figure><img src="${articleImage}"><p>${abstract}</p></figure></a>`)
         })
 
       })
