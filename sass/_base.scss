@@ -72,6 +72,17 @@ header {
   }
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  & span {
+    color: white;
+  }
+}
+
 $desktop-width: 780px;
 $tablet-width: 320px;
 
