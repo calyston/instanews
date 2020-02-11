@@ -4,6 +4,7 @@ $(function () {
     console.log($(this).val());
 
     const section = $(this).val();
+    $(".grid").empty()
 
     $.ajax({
       method: "GET",
@@ -21,9 +22,7 @@ $(function () {
           let articleImage = value.multimedia[0].url
 
           $(".grid").append(`<a href="${articleUrl}"><figure><img src="${articleImage}"><p>${abstract}</p></figure></a>`)
-        }
-
-        )
+        })
       })
   })
 })
