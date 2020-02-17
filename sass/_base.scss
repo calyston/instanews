@@ -52,6 +52,7 @@ table {
 body {
   background-color: black;
   line-height: 1.5;
+  font-size: 16px;
 }
 
 header {
@@ -64,7 +65,7 @@ header {
   }
 
   & span {
-    color: white;
+    color: #ffffff;
   }
 
   & select {
@@ -79,7 +80,7 @@ footer {
   padding-top: 20px;
   padding-bottom: 40px;
   & span {
-    color: white;
+    color: #c2c2c2;
   }
 }
 
