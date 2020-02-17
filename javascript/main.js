@@ -13,17 +13,18 @@ $(function () {
     })
 
       .done(function (data) {
+        console.log('data here ', data)
         console.log(data.results[0].multimedia)
 
         let i = 0;
         $.each(data.results, function (index, value) {
-          //console.log(`${index}: ${value}`)
+          // console.log(`${index}: ${value}`)
 
           let articleUrl = value.url
           let abstract = value.abstract
           let articleImage = value.multimedia[0].url
 
-          if (value.multimedia.length !== 0 && i < 12) {
+          if (value.multimedia.length !== 0 && i < 12 && abstract !== "") {
             i++;
             $(".grid").append(`<a href="${articleUrl}"><figure><img src="${articleImage}"><p>${abstract}</p></figure></a>`);
             return i !== 12;
