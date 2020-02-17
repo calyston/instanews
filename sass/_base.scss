@@ -48,29 +48,25 @@ table {
 }
 
 //NYT Style
+$desktop-width: 780px;
+$tablet-width: 480px;
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
 
 body {
   background-color: black;
   line-height: 1.5;
   font-size: 16px;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  & img {
-    margin: 20px;
-  }
-
-  & span {
-    color: #ffffff;
-  }
-
-  & select {
-    margin: 20px;
-  }
 }
 
 footer {
@@ -82,19 +78,10 @@ footer {
   & span {
     color: #c2c2c2;
   }
-}
-
-$desktop-width: 780px;
-$tablet-width: 320px;
-
-@mixin desktop {
-  @media (min-width: $desktop-width) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media (min-width: $tablet-width) {
-    @content;
+  @include desktop {
+    align-items: flex-start;
+    & span {
+      margin: 20px;
+    }
   }
 }

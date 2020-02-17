@@ -1,0 +1,62 @@
+$desktop-width: 780px;
+$tablet-width: 480px;
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  & img {
+    margin: 20px;
+    @include tablet {
+      margin: 20px 0px;
+    }
+    @include desktop {
+      margin: 20px;
+    }
+  }
+
+  & span {
+    color: #ffffff;
+  }
+
+  & select {
+    margin: 20px;
+  }
+}
+
+.select {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
