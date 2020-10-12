@@ -23,12 +23,6 @@ header {
     justify-content: center;
   }
 
-  @include desktop {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-
   & img {
     margin: 20px;
     @include tablet {

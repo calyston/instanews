@@ -95,13 +95,6 @@ footer {
   padding-bottom: 40px; }
   footer span {
     color: #c2c2c2; }
-  @media (min-width: 780px) {
-    footer {
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start; }
-      footer span {
-        margin: 20px; } }
 
 header {
   display: -webkit-box;
@@ -126,18 +119,6 @@ header {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
-  @media (min-width: 780px) {
-    header {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start; } }
   header img {
     margin: 20px; }
     @media (min-width: 480px) {

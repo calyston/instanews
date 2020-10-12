@@ -128,10 +128,4 @@ footer {
   & span {
     color: #c2c2c2;
   }
-  @include desktop {
-    align-items: flex-start;
-    & span {
-      margin: 20px;
-    }
-  }
 }
