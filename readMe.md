@@ -3,6 +3,10 @@ Responsive news website using the New York Times API. Headlines from the New Yor
 
 ### Live Preview: 
 
+https://calyston-instanews.netlify.app/
+
+### Gif:
+![](InstaNewsTabletGif.gif)
 
 ## Technologies Used
 HTML, CSS, SASS, JavaScript, jQuery, JSON, Gulp.
